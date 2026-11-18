@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**这是我《Go 智能体开发实战》系列视频课程的配套项目源码，每一集对应一次可运行的代码演进，跟着视频 + 源码即可完整复现一个生产级 Agent 平台。**
+**这是我《Go 智能体开发实战》系列视频课程的配套项目源码，跟着视频 + 源码即可完整复现一个生产级 Agent 平台。**
 
 [![Bilibili](https://img.shields.io/badge/B站-课程主页-00A1D6?logo=bilibili&logoColor=white)](https://space.bilibili.com/481791559)
 [![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?logo=go&logoColor=white)](https://go.dev)
@@ -13,7 +13,7 @@
 
 [![Bilibili](https://img.shields.io/badge/🎬_B站_Space-481791559-fb7299?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/481791559)
 
-| 微信公众号 / 交流群 |
+| 简历优化、项目定制、1v1全程陪跑等 |
 |:---:|
 | <img src="docs/images/vx.png" width="200" alt="微信二维码"/> |
 | 扫码加微信 |
@@ -33,6 +33,7 @@ NexusAgent 是一个**通用智能体（Agent）平台**，覆盖了 Agent 开�
 - **生产基建**：JWT 双 Token 认证、密钥 AES-GCM 加密、OpenTelemetry 全链路追踪、Prometheus 指标、Redis Streams 异步任务
 
 项目采用**双轨教学**：`agent/naive/` 下有每项能力的 ~500 行手写极简版（看懂原理），生产版基于字节 [eino](https://github.com/cloudwego/eino) 框架工程化实现（学会落地）。
+(变更，途中决定不将 eino 和手撕放在一起，后续会单独出一个纯 eino 项目，用于教学。)
 
 ## 技术栈
 
@@ -159,7 +160,7 @@ agent-golang/
 
 **M1 工程骨架 → M2 ReAct 智能体 → M3 RAG 知识库 → M4 MCP/A2A → M5 工作流 → M6 可观测与上线**
 
-每集均遵循「回顾目标 → Demo → 代码走读 → 验证 → 理论 → 总结」结构，源码以集为单位演进，可在 commit 历史中回看每一集的增量。
+每集均遵循「回顾目标 → Demo → 代码走读 → 验证 → 理论 → 总结」结构。
 
 ---
 
